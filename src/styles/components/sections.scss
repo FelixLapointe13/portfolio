@@ -1,11 +1,143 @@
+.section {
+    padding: 100px 0;
+}
+
 // Pour la section Outils dans la page À propos
 .outils {
     position: relative;
     z-index: 4;
     background-color: var(--color-bg-secondary);
-    color: var(--color-white);
+
+    .outils__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+        width: 55%;
+
+        @media (width <= $breakpoint-sm) {
+            width: 100%;
+        }
+    }
+
+    h2,
+    p,
+    .icon {
+        color: var(--color-white);
+    }
+
+    .outils__plus {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+
+        h2 {
+            font-weight: 700;
+        }
+
+        @media (width <= $breakpoint-sm) {
+            flex-direction: column;
+            gap: 60px;
+        }
+    }
+
+    .outil {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .icones {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+}
+
+// Pour la section Moi dans la page À propos
+.moi {
+    position: relative;
+    .moi__media {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: auto;
+        object-fit: cover;
+        img {
+            height: 100%;
+            width: 100%;
+            opacity: 50%;
+            transform: rotate(-20deg);
+            object-fit: contain;
+        }
+
+        @media (width <= $breakpoint-sm) {
+            width: 80%;
+        }
+    }
 
     .wrapper {
         display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .moi__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        width: 60%;
+    }
+
+    .moi__content_suite {
+        position: relative;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+
+        @media (width <= $breakpoint-sm) {
+            flex-direction: column;
+            gap: 60px;
+        }
+    }
+
+    .moi_compose {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        span {
+            font-weight: 700;
+        }
+
+        .points__moi {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+            row-gap: 60px;
+
+            @media (width <= $breakpoint-md) {
+                grid-template-columns: 1fr;
+                row-gap: 30px;
+            }
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+// Pour la section Video dans la page À propos
+.video {
+    background-color: var(--color-bg-secondary);
+    position: relative;
+
+    h2 {
+        color: var(--color-white);
     }
 }
