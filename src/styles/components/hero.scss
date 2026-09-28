@@ -1,0 +1,48 @@
+.hero {
+    position: relative;
+    .hero__media {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        img {
+            height: 120%;
+            width: 100%;
+            opacity: 50%;
+            transform: rotate(20deg);
+            object-fit: contain;
+        }
+    }
+
+    .hero__content {
+        position: relative;
+        z-index: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+        height: 100%;
+
+        @media (width <= $breakpoint-sm) {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+    }
+
+    .content_text {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .content_media {
+        height: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

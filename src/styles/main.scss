@@ -1,9 +1,11 @@
 //FONTS
 // ici sont chargé les fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
 @import 'tools/cover';
+@import 'tools/typo';
 
 // SETTINGS
 // Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
@@ -29,3 +31,5 @@
 // C’est là que la majorité de notre travail a lieu.
 @import 'components/icons';
 @import 'components/header';
+@import 'components/hero';
+@import 'components/sections';

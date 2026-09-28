@@ -3,13 +3,13 @@
    ========================================================================== */
 /// Font family
 :root {
-    --font-primary: 'Rajdhani', sans-serif;
-    --font-secondary: 'DM Sans', sans-serif;
+    --font-primary: 'Space Grotesk', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
 
     --font-size-content: 1.2rem;
 
     /// Grosseur des textes
-    --font-size-h1: 40px;
-    --font-size-h2: 32px;
+    --font-size-h1: #{typo(40px, 60px)};
+    --font-size-h2: #{typo(28px, 36px)};
     --font-size-h3: 24px;
 }

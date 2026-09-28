@@ -1,0 +1,11 @@
+// Pour la section Outils dans la page À propos
+.outils {
+    position: relative;
+    z-index: 4;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-white);
+
+    .wrapper {
+        display: flex;
+    }
+}

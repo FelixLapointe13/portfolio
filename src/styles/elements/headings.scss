@@ -4,42 +4,28 @@
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
     font-family: var(--font-primary);
     line-height: 1;
     font-weight: bold;
     color: var(--color-black);
+    margin: 0;
 }
 
 h1 {
     font-size: var(--font-size-h1);
-    margin: 0;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 h2 {
     font-size: var(--font-size-h2);
-    text-transform: uppercase;
+    font-weight: 300;
 }
 
 h3 {
     font-size: var(--font-size-h3);
+    font-weight: 500;
     margin: 0;
-}
-
-h4 {
-    font-size: var(--font-size-h4);
-}
-
-h5 {
-    font-size: var(--font-size-h5);
-}
-
-h6 {
-    font-size: var(--font-size-h6);
 }
 
 p {
