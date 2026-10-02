@@ -89,6 +89,10 @@
         flex-direction: column;
         gap: 60px;
         width: 60%;
+
+        @media (width <= $breakpoint-sm) {
+            width: 100%;
+        }
     }
 
     .moi__content_suite {
@@ -158,6 +162,7 @@
 }
 
 .candidature {
+    padding-bottom: 0;
     .wrapper {
         position: relative;
         z-index: 3;
