@@ -7,7 +7,7 @@ class Main {
   }
 
   init() {
-    document.documentElement.classList.add('has-js');
+    //document.documentElement.classList.add('has-js');
 
     Icons.load();
 
