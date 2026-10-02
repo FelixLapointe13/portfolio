@@ -57,6 +57,7 @@
 // Pour la section Moi dans la page À propos
 .moi {
     position: relative;
+    overflow: hidden;
     .moi__media {
         position: absolute;
         top: 0;
@@ -163,6 +164,7 @@
 
 .candidature {
     padding-bottom: 0;
+    overflow: hidden;
     .wrapper {
         position: relative;
         z-index: 3;
