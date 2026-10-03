@@ -162,6 +162,7 @@
     }
 }
 
+// Pour la section Candidature dans la page À propos
 .candidature {
     padding-bottom: 0;
     overflow: hidden;
@@ -206,4 +207,10 @@
             justify-content: center;
         }
     }
+}
+
+// Css dédier à la page de projets
+
+.grille__projets {
+    position: relative;
 }

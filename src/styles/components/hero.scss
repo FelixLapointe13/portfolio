@@ -51,4 +51,13 @@
             object-fit: cover;
         }
     }
+
+    .content__projet {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            width: 300px;
+        }
+    }
 }
