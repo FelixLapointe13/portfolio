@@ -1,0 +1,84 @@
+.cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 60px;
+
+    @media (width <= $breakpoint-sm) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.carte {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    .carte__media {
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+
+    .carte__content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        display: flex;
+        align-items: end;
+        transform: translateY(500px);
+        transition: all 0.4s ease-in-out;
+        h3,
+        p,
+        .icon {
+            color: var(--color-white);
+        }
+
+        hr {
+            width: 100%;
+        }
+
+        .icon {
+            transition: all 0.4s ease-in;
+
+            &:hover {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .content__projet {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-grow: 1;
+    }
+
+    .content__texte {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex-grow: 1;
+    }
+
+    .top__content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &:hover {
+        .carte__content {
+            transform: translateY(0);
+        }
+    }
+}
