@@ -76,6 +76,14 @@
         gap: 30px;
     }
 
+    &:nth-child(even) {
+        transform: translateY(250px);
+
+        @media (width <= $breakpoint-sm) {
+            transform: translateY(0);
+        }
+    }
+
     &:hover {
         .carte__content {
             transform: translateY(0);
