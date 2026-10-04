@@ -28,8 +28,8 @@
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "10.0.0",
     "gulp-sass": "6.0.1",
-    "gulp-twig": "1.2.0",
     "gulp-sourcemaps": "2.6.5",
+    "gulp-twig": "1.2.0",
     "node-notifier": "10.0.1",
     "sass": "1.98.0",
     "svg-spritemap-webpack-plugin": "5.1.0",
@@ -52,5 +52,8 @@
     ]
   },
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "swiper": "^14.3.0"
+  }
 }

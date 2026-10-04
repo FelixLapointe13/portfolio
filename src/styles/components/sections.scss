@@ -1,5 +1,9 @@
 .section {
     padding: 100px 0;
+
+    @media (width <= $breakpoint-sm) {
+        padding: 50px 0;
+    }
 }
 
 // Pour la section Outils dans la page À propos

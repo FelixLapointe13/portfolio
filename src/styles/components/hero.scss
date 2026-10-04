@@ -61,4 +61,20 @@
             width: 300px;
         }
     }
+
+    .content_detail_projet {
+        @media (width <= $breakpoint-sm) {
+            gap: 50px;
+        }
+    }
+
+    .content_detail {
+        align-items: flex-start;
+    }
+
+    .thumbnail_detail {
+        img {
+            border-radius: 20px;
+        }
+    }
 }
