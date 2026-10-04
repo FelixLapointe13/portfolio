@@ -218,3 +218,92 @@
 .grille__projets {
     position: relative;
 }
+
+// Css dédier à la page détail projet
+
+.description {
+    background-color: var(--color-bg-secondary);
+
+    h2,
+    h3,
+    p,
+    .icon {
+        color: var(--color-white);
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 80px;
+
+        @media (width <= $breakpoint-md) {
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+    }
+
+    .description__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .utilisations {
+        display: flex;
+        gap: 60px;
+
+        @media (width <= $breakpoint-sm) {
+            flex-direction: column;
+        }
+    }
+
+    .utilisation {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .icones_utilisation {
+        display: flex;
+        gap: 20px;
+    }
+
+    .ia {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .description__media {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            width: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.7);
+            transform: translateY(100px);
+            transition: all 0.4s ease-in-out;
+        }
+
+        &:hover {
+            p {
+                transform: translateY(0);
+            }
+        }
+    }
+}
