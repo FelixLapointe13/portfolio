@@ -1,0 +1,30 @@
+.swiper {
+    overflow: visible;
+    margin-bottom: 100px;
+
+    @media (width <= $breakpoint-sm) {
+        margin-bottom: 50px;
+    }
+}
+
+.swiper-pagination {
+    transform: translateY(100px);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    @media (width <= $breakpoint-md) {
+        gap: 15px;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-bg-secondary);
+}

@@ -6,7 +6,7 @@ export default class Carousel {
 
     this.options = {
       slidesPerView: 1,
-      spaceBetween: 50,
+      spaceBetween: 100,
       loop: true,
 
       pagination: {

@@ -307,3 +307,11 @@
         }
     }
 }
+
+.swiper {
+    margin-top: 100px;
+
+    @media (width <= $breakpoint-md) {
+        margin-top: 50px;
+    }
+}

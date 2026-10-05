@@ -1,3 +1,5 @@
+//Cartes pour la page de projets
+
 .cartes {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -48,7 +50,7 @@
             width: 100%;
         }
 
-        .icon {
+        .icone_projet {
             transition: all 0.4s ease-in;
 
             &:hover {
@@ -88,6 +90,59 @@
     &:hover {
         .carte__content {
             transform: translateY(0);
+        }
+    }
+}
+
+//Cartes pour les étapes dans le carousel de page détail projet
+
+.carte__carousel {
+    position: relative;
+    border-radius: 25px;
+    border: 5px solid var(--color-bg-secondary);
+    .carte__media {
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
+        }
+        .icone_carousel {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: var(--color-white);
+            background-color: rgba($color: #000000, $alpha: 0.7);
+            padding: 20px;
+            border-radius: 20px;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                background-color: rgba($color: #ffffff, $alpha: 0.7);
+                color: var(--color-bg-secondary);
+            }
+        }
+    }
+
+    .carte__content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h3,
+        p {
+            color: var(--color-white);
+            width: 70%;
         }
     }
 }
