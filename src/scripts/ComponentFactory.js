@@ -1,5 +1,6 @@
 // importer vos composantes ici
 import YouTube from './components/YouTube.js';
+import Carousel from './components/Carousel.js';
 
 export default class ComponentFactory {
   constructor() {
@@ -7,6 +8,7 @@ export default class ComponentFactory {
     this.componentList = {
       // Mettez votre liste de composantes ici
       YouTube,
+      Carousel,
     };
     this.init();
   }
