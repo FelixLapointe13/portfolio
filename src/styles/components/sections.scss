@@ -341,4 +341,21 @@
         flex-direction: column;
         gap: 30px;
     }
+
+    .liste_trames {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+
+        .trames {
+            list-style: none;
+            padding: 0;
+        }
+
+        @media (width <= $breakpoint-sm) {
+            flex-direction: column;
+            gap: 0;
+            align-items: flex-start;
+        }
+    }
 }

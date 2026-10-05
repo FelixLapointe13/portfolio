@@ -1,7 +1,6 @@
 .swiper {
-    overflow: visible;
     margin: 100px 0;
-
+    overflow: visible;
     @media (width <= $breakpoint-sm) {
         margin: 50px 0;
     }

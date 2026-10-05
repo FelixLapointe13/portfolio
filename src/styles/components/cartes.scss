@@ -1,6 +1,8 @@
 //Cartes pour la page de projets
 
 .cartes {
+    position: relative;
+    z-index: 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 25px;
