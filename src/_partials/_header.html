@@ -10,7 +10,7 @@
     </head>
 
 <body>
-    <header class="header" id="hub">
+    <header class="header" id="hub" data-component="Header">
         <div class="wrapper">
             <div class="nav__gauche">
                 <a href="index.html"><img src="assets/images/fl_logo.png" alt="Logo Félix"></a>
@@ -44,5 +44,36 @@
                 <span></span>
             </button>
         </div>
+
+        <section class="header__menu">
+            <div class="wrapper">
+                <div class="logo__mobile">
+                    <img src="assets/images/fl_logo.png" alt="Logo FL">
+                </div>
+                <div class="nav__mobile">
+                    <ul class="menu__mobile">
+                    <li><a href="#hub">Hub</a></li>
+                    <li><a href="index.html">À Propos</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <span class="ligne"></span>
+                <ul class="hub__mobile">
+                    <li><a href="index.html#video"><svg class="icon icon-lg">
+                        <use href="#icon-video"></use>
+                    </svg>Vidéo</a></li>
+                    <li><a href=""><svg class="icon">
+                        <use href="#icon-fichier"></use>
+                    </svg>CV</a></li>
+                    <li><a href=""><svg class="icon">
+                        <use href="#icon-linkedin"></use>
+                    </svg>Linkedin</a></li>
+                    <li><a href="https://github.com/FelixLapointe13" target="_blank"><svg class="icon">
+                        <use href="#icon-github"></use>
+                    </svg>Github</a></li>
+                </ul>
+                </div>
+            </div>
+        </section>
     </header>
     
