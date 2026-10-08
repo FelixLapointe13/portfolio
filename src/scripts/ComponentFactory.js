@@ -2,6 +2,7 @@
 import YouTube from './components/YouTube.js';
 import Carousel from './components/Carousel.js';
 import Header from './components/Header.js';
+import Scrolly from './components/Scrolly.js';
 
 export default class ComponentFactory {
   constructor() {
@@ -11,6 +12,7 @@ export default class ComponentFactory {
       YouTube,
       Carousel,
       Header,
+      Scrolly,
     };
     this.init();
   }
