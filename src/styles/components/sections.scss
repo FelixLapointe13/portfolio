@@ -328,6 +328,12 @@
     }
 }
 
+.section--horiz {
+    margin-top: 50px;
+    display: flex;
+    gap: 100px;
+}
+
 .credits {
     background-color: var(--color-bg-secondary);
     color: var(--color-white);

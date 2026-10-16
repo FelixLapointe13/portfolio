@@ -98,7 +98,8 @@
 
 //Cartes pour les étapes dans le carousel de page détail projet
 
-.carte__carousel {
+.carte__scroll {
+    flex-shrink: 0;
     position: relative;
     border-radius: 25px;
     border: 5px solid var(--color-bg-secondary);
