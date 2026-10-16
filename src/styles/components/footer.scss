@@ -17,6 +17,8 @@
             align-items: center;
             gap: 40px;
             list-style: none;
+            flex-wrap: wrap;
+            padding: 0;
 
             @media (width <= $breakpoint-sm) {
                 flex-direction: column;
@@ -32,8 +34,28 @@
             color: var(--color-black);
         }
 
+        @media (width <= $breakpoint-md) {
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 0;
+        }
+    }
+
+    .contact__info {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        a {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
         @media (width <= $breakpoint-sm) {
             flex-direction: column;
+            gap: 10px;
+            align-items: center;
         }
     }
 
