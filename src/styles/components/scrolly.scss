@@ -1,0 +1,105 @@
+.has-js {
+    [data-scrolly='fromBottom'] {
+        // Déclarations pour cacher l'élément
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 0.4s $ease-in-out-quint;
+        &.is-active {
+            // On change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromTop'] {
+        // Déclarations pour cacher l'élément
+        opacity: 0;
+        transform: translateY(-100px);
+        transition: all 0.4s $ease-in-out-quint;
+        &.is-active {
+            // On change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromLeft'] {
+        // Déclarations pour cacher l'élément
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: all 0.4s $ease-in-out-quint;
+        &.is-active {
+            // On change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromRight'] {
+        // Déclarations pour cacher l'élément
+        opacity: 0;
+        transform: translateX(100px);
+        transition: all 0.4s $ease-in-out-quint;
+        &.is-active {
+            // On change ce qu'il faut pour l'afficher
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='flip'] {
+        opacity: 0;
+        &.is-active {
+            opacity: 1;
+            backface-visibility: visible !important;
+            animation: flip 1s ease;
+        }
+        @keyframes flip {
+            //les images clés pour créer l'animation du "flip"
+            0% {
+                transform: perspective(700px) rotateY(0deg);
+                animation-timing-function: ease-out;
+            }
+            100% {
+                transform: perspective(700px) rotateY(360deg);
+                animation-timing-function: ease-out;
+            }
+        }
+    }
+
+    [data-scrolly='fade'] {
+        opacity: 0;
+        &.is-active {
+            opacity: 1;
+            animation: fade 0.5s ease-in-out;
+        }
+        @keyframes fade {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+
+    [data-scrolly='fadeIn'] {
+        opacity: 0;
+        &.is-active {
+            opacity: 1;
+            animation: fade 0.5s ease-in-out;
+        }
+        @keyframes fade {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+}
