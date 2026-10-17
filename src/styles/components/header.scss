@@ -1,9 +1,8 @@
 .header {
     background-color: var(--color-bg-primary);
     padding: 20px 0;
-    position: fixed;
-    width: 100%;
     z-index: 5;
+    position: relative;
     .wrapper {
         display: flex;
         justify-content: space-between;

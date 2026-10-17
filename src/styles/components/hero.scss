@@ -1,15 +1,14 @@
 .hero {
-    padding-top: 100px;
     position: relative;
     z-index: 2;
     .hero__media {
         position: absolute;
+        z-index: 3;
         top: 0;
         left: 0;
         width: 50%;
         height: auto;
         object-fit: cover;
-        margin-top: 100px;
         img {
             height: 100%;
             width: 100%;
@@ -84,9 +83,6 @@
 }
 
 .hero__projets {
-    padding: 250px 0 100px;
-
-    @media (width <= $breakpoint-sm) {
-        padding: 100px 0 100px;
-    }
+    padding: 100px 0;
+    overflow: hidden;
 }
