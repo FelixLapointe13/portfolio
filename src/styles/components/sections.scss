@@ -328,10 +328,15 @@
     }
 }
 
-.section--horiz {
-    margin-top: 50px;
-    display: flex;
-    gap: 100px;
+.scroll__horizontal {
+    overflow-x: hidden;
+    width: 100%;
+
+    .section--horiz {
+        margin-top: 50px;
+        display: flex;
+        gap: 100px;
+    }
 }
 
 .credits {

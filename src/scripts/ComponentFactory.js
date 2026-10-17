@@ -1,9 +1,8 @@
 // importer vos composantes ici
 import YouTube from './components/YouTube.js';
-import Carousel from './components/Carousel.js';
 import Header from './components/Header.js';
 import Scrolly from './components/Scrolly.js';
-import Scroller from './components/Scroller.js';
+import Carousel from './components/Carousel.js';
 
 export default class ComponentFactory {
   constructor() {
@@ -11,10 +10,9 @@ export default class ComponentFactory {
     this.componentList = {
       // Mettez votre liste de composantes ici
       YouTube,
-      Carousel,
       Header,
       Scrolly,
-      Scroller,
+      Carousel,
     };
     this.init();
   }
