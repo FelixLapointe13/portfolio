@@ -1,6 +1,5 @@
 .header {
-    --header-height: 120px;
-    height: var(--header-height);
+    height: 120px;
     padding: 20px 0;
     z-index: 10;
     width: 100%;
@@ -116,6 +115,10 @@
         @media (width >= $breakpoint-md) {
             display: none;
         }
+    }
+
+    @media (width <= $breakpoint-sm) {
+        height: 100px;
     }
 }
 
