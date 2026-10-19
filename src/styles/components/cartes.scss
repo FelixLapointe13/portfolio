@@ -82,10 +82,10 @@
     }
 
     &:nth-child(even) {
-        transform: translateY(250px);
+        translate: 0 250px;
 
         @media (width <= $breakpoint-sm) {
-            transform: translateY(0);
+            translate: 0 0;
         }
     }
 
