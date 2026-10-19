@@ -1,11 +1,33 @@
 .header {
-    background-color: var(--color-bg-primary);
+    --header-height: 120px;
+    height: var(--header-height);
     padding: 20px 0;
-    z-index: 5;
-    position: relative;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    transition: transform 0.5s $ease-in-cubic;
+
+    &::before {
+        background-color: var(--color-bg-primary);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
+
     .wrapper {
         display: flex;
         justify-content: space-between;
+        z-index: 5;
+        position: relative;
+    }
+
+    .header-is-hidden.is-scrolling-down:not(.nav-is-active) & {
+        transform: translateY(-100%) translateY(4px);
     }
 
     .nav__gauche {

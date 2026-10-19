@@ -3,7 +3,7 @@
         // Déclarations pour cacher l'élément
         opacity: 0;
         transform: translateY(100px);
-        transition: all 0.4s $ease-in-out-quint;
+        transition: all 0.7s $ease-in-out-quint;
         &.is-active {
             // On change ce qu'il faut pour l'afficher
             opacity: 1;
@@ -15,7 +15,7 @@
         // Déclarations pour cacher l'élément
         opacity: 0;
         transform: translateY(-100px);
-        transition: all 0.4s $ease-in-out-quint;
+        transition: all 0.7s $ease-in-out-quint;
         &.is-active {
             // On change ce qu'il faut pour l'afficher
             opacity: 1;
@@ -27,7 +27,7 @@
         // Déclarations pour cacher l'élément
         opacity: 0;
         transform: translateX(-100px);
-        transition: all 0.4s $ease-in-out-quint;
+        transition: all 0.7s $ease-in-out-quint;
         &.is-active {
             // On change ce qu'il faut pour l'afficher
             opacity: 1;
@@ -39,7 +39,7 @@
         // Déclarations pour cacher l'élément
         opacity: 0;
         transform: translateX(100px);
-        transition: all 0.4s $ease-in-out-quint;
+        transition: all 0.7s $ease-in-out-quint;
         &.is-active {
             // On change ce qu'il faut pour l'afficher
             opacity: 1;

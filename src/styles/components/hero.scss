@@ -83,6 +83,9 @@
 }
 
 .hero__projets {
-    padding: 100px 0;
-    overflow: hidden;
+    padding: 200px 0 100px;
+
+    @media (width <= $breakpoint-sm) {
+        padding: 100px 0;
+    }
 }
