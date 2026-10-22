@@ -67,20 +67,26 @@ export default class Scroller {
 
   // SECTION HORIZONTAL
   initHoriz() {
-    const sectionHoriz = this.element.querySelector('.js-horiz');
-    const panels = sectionHoriz.querySelectorAll('.js-panel');
+    const section = this.element.querySelector('.scroll__horizontal');
+    const track = this.element.querySelector('.js-horiz');
+    const panels = track.querySelectorAll('.js-panel');
     const nbPanels = panels.length - 1;
-    const buffer = 200;
 
-    gsap.to(panels, {
-      xPercent: -100 * nbPanels,
+    // Distance totale à parcourir horizontalement (en px)
+    const getDistance = () => track.scrollWidth - section.clientWidth;
+
+    gsap.to(track, {
+      x: () => -getDistance(),
       ease: 'none',
       scrollTrigger: {
+        trigger: section,
         pin: true,
-        trigger: sectionHoriz,
         scrub: 1,
-        snap: 1 / nbPanels,
-        end: () => '+=' + (sectionHoriz.offsetWidth + buffer),
+        start: 'top top',
+        end: () => '+=' + getDistance(),
+        invalidateOnRefresh: true, // recalcule au resize (important pour le responsive)
+        anticipatePin: 1,
+        snap: nbPanels > 0 ? 1 / nbPanels : false,
       },
     });
   }

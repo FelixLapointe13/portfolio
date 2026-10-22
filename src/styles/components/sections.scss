@@ -172,6 +172,11 @@
             left: 50%;
             color: var(--color-white);
             transition: all 0.4s ease-in-out;
+
+            @media (width <= $breakpoint-sm) {
+                top: 35%;
+                left: 40%;
+            }
         }
 
         &:hover {
@@ -332,10 +337,22 @@
     overflow-x: hidden;
     width: 100%;
 
-    .section--horiz {
+    .js-horiz {
         margin-top: 50px;
         display: flex;
         gap: 100px;
+        width: max-content;
+        will-change: transform;
+        padding-right: 430px;
+
+        @media (width <= $breakpoint-sm) {
+            padding-right: 50px;
+        }
+    }
+
+    .js-panel {
+        flex: 0 0 auto;
+        width: min(90vw, 1440px);
     }
 }
 

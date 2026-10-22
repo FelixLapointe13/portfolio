@@ -19,7 +19,7 @@
 <section class="description section">
     <div class="wrapper">
         <div class="description__text">
-            <h2>Qu’est ce que VGM Entertainment?</h2>
+            <h2 data-component="TextAnim" data-repeat>Qu’est ce que VGM Entertainment?</h2>
             <p>
                 VGM Entertainment est conçue comme un
                 <strong>répertoire</strong>
@@ -71,104 +71,112 @@
 <section class="scroll__horizontal section">
     <div class="wrapper">
         <h2>Étapes:</h2>
-        <div class="swiper" data-component="Carousel">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide carte__scroll">
-                    <div class="carte__media">
-                        <img src="assets/images/vgm_entertainment/01-inspiration_comparable_vgm_entertainment.jpg" alt="Étape 1" />
-                    </div>
-                    <div class="carte__content">
-                        <h3>1 — Recherche d’inspiration et de comparables sur Google pour le site</h3>
-                        <p>
-                            Je recherche des
-                            <strong>comparables</strong>
-                            et des
-                            <strong>inspirations</strong>
-                            pour que ma recherche soit enrichi pour le
-                            <strong>processus de création</strong>
-                            du guide de style et de la maquette du site.
-                        </p>
-                    </div>
+        <div class="scroll-track js-horiz">
+            <!-- Étape 1 -->
+            <div class="carte__scroll js-panel">
+                <div class="carte__media">
+                    <img src="assets/images/vgm_entertainment/01-inspiration_comparable_vgm_entertainment.jpg" alt="Étape 1" />
                 </div>
-                <div class="swiper-slide carte__scroll">
-                    <div class="carte__media">
-                        <img src="assets/images/vgm_entertainment/02-guide_couleur_typo_vgm_entertainment.jpg" alt="Étape 2" />
-                    </div>
-                    <div class="carte__content">
-                        <h3>2 — Sélection de palette de couleur et de choix typographique sur Figma</h3>
-                        <p>
-                            Je poursuis la création de mon site en choisissant une
-                            <strong>palette de couleur</strong>
-                            impécable et en choisissant deux excellents
-                            <strong>typographies</strong>
-                            qui seront utilisées dans mes maquettes.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide carte__scroll">
-                    <div class="carte__media">
-                        <img src="assets/images/vgm_entertainment/03-maquette_vgm_entertainment.jpg" alt="Étape 3" />
-                    </div>
-                    <div class="carte__content">
-                        <h3>3 — Création des maquettes du site et organisation des sections dans Figma</h3>
-                        <p>
-                            Je conçois une maquette pour 3 différentes
-                            <strong>pages</strong>
-                            avec des différentes
-                            <strong>sections</strong>
-                            pour mon site web: la page d’accueil, la page des jeux vidéos et la page des artistes.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide carte__scroll">
-                    <div class="carte__media">
-                        <img src="assets/images/vgm_entertainment/04-integration_html_developpement_css_vgm_entertainment.jpg" alt="Étape 4" />
-                    </div>
-                    <div class="carte__content">
-                        <h3>4 — Intégration html et developpement css du site d’archive avec VS Code</h3>
-                        <p>
-                            Suite à la maquette, je conçois avec du
-                            <strong>code html</strong>
-                            et
-                            <strong>css</strong>
-                            les pages du site tout en gardant une
-                            <strong>bonne organisation</strong>
-                            des sections et des classes que j’utilise pour le css.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide carte__scroll">
-                    <div class="carte__media">
-                        <img src="assets/images/vgm_entertainment/06-programmation_composante_js_vgm_entertainment.jpg" alt="Étape 5" />
-                    </div>
-                    <div class="carte__content">
-                        <h3>5 — Programmation js et ajustement responsive du site sur VS Code</h3>
-                        <p>
-                            Après finaliser le css de base pour mon site, j’ai programmé des
-                            <strong>composantes</strong>
-                            et ajusté le
-                            <strong>responsive</strong>
-                            de mon site pour que ce soit calibrer pour le mobile.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide carte__scroll">
-                    <div class="carte__media">
-                        <img src="assets/images/vgm_entertainment/07-resultat_final_vgm_entertainment.jpg" alt="Étape 6" />
-                    </div>
-                    <div class="carte__content">
-                        <h3>6 - Résultat final de VGM Entertainment via le navigateur au choix</h3>
-                        <p>
-                            Maintenant que c’est tout finalisé, je peux survoler mon site sur un navigateur pour voir les
-                            <strong>trames des jeux vidéos</strong>
-                            et les
-                            <strong>artistes</strong>
-                            qui ont réalisés ces chef-d'oeuvres.
-                        </p>
-                    </div>
+                <div class="carte__content">
+                    <h3>1 — Recherche d’inspiration et de comparables sur Google pour le site</h3>
+                    <p>
+                        Je recherche des
+                        <strong>comparables</strong>
+                        et des
+                        <strong>inspirations</strong>
+                        pour que ma recherche soit enrichi pour le
+                        <strong>processus de création</strong>
+                        du guide de style et de la maquette du site.
+                    </p>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+
+            <!-- Étape 2 -->
+            <div class="carte__scroll js-panel">
+                <div class="carte__media">
+                    <img src="assets/images/vgm_entertainment/02-guide_couleur_typo_vgm_entertainment.jpg" alt="Étape 2" />
+                </div>
+                <div class="carte__content">
+                    <h3>2 — Sélection de palette de couleur et de choix typographique sur Figma</h3>
+                    <p>
+                        Je poursuis la création de mon site en choisissant une
+                        <strong>palette de couleur</strong>
+                        impécable et en choisissant deux excellents
+                        <strong>typographies</strong>
+                        qui seront utilisées dans mes maquettes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Étape 3 -->
+            <div class="carte__scroll js-panel">
+                <div class="carte__media">
+                    <img src="assets/images/vgm_entertainment/03-maquette_vgm_entertainment.jpg" alt="Étape 3" />
+                </div>
+                <div class="carte__content">
+                    <h3>3 — Création des maquettes du site et organisation des sections dans Figma</h3>
+                    <p>
+                        Je conçois une maquette pour 3 différentes
+                        <strong>pages</strong>
+                        avec des différentes
+                        <strong>sections</strong>
+                        pour mon site web: la page d’accueil, la page des jeux vidéos et la page des artistes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Étape 4 -->
+            <div class="carte__scroll js-panel">
+                <div class="carte__media">
+                    <img src="assets/images/vgm_entertainment/04-integration_html_developpement_css_vgm_entertainment.jpg" alt="Étape 4" />
+                </div>
+                <div class="carte__content">
+                    <h3>4 — Intégration html et developpement css du site d’archive avec VS Code</h3>
+                    <p>
+                        Suite à la maquette, je conçois avec du
+                        <strong>code html</strong>
+                        et
+                        <strong>css</strong>
+                        les pages du site tout en gardant une
+                        <strong>bonne organisation</strong>
+                        des sections et des classes que j’utilise pour le css.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Étape 5 -->
+            <div class="carte__scroll js-panel">
+                <div class="carte__media">
+                    <img src="assets/images/vgm_entertainment/06-programmation_composante_js_vgm_entertainment.jpg" alt="Étape 5" />
+                </div>
+                <div class="carte__content">
+                    <h3>5 — Programmation js et ajustement responsive du site sur VS Code</h3>
+                    <p>
+                        Après finaliser le css de base pour mon site, j’ai programmé des
+                        <strong>composantes</strong>
+                        et ajusté le
+                        <strong>responsive</strong>
+                        de mon site pour que ce soit calibrer pour le mobile.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Étape 6 -->
+            <div class="carte__scroll js-panel">
+                <div class="carte__media">
+                    <img src="assets/images/vgm_entertainment/07-resultat_final_vgm_entertainment.jpg" alt="Étape 6" />
+                </div>
+                <div class="carte__content">
+                    <h3>6 - Résultat final de VGM Entertainment via le navigateur au choix</h3>
+                    <p>
+                        Maintenant que c’est tout finalisé, je peux survoler mon site sur un navigateur pour voir les
+                        <strong>trames des jeux vidéos</strong>
+                        et les
+                        <strong>artistes</strong>
+                        qui ont réalisés ces chef-d'oeuvres.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
