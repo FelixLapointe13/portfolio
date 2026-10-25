@@ -35,6 +35,20 @@
         position: relative;
         z-index: 5;
 
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        h3 {
+            display: none;
+
+            @media (width <= $breakpoint-md) {
+                display: block;
+            }
+        }
+
         img {
             height: 64px;
         }

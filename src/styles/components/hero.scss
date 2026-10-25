@@ -45,6 +45,7 @@
         flex-direction: column;
         gap: 40px;
         width: 100%;
+        align-items: flex-start;
     }
 
     .content_media {
@@ -107,5 +108,29 @@
             margin-top: 0;
             height: auto;
         }
+    }
+}
+
+.ia__hero {
+    padding: 250px 0;
+
+    .hero__media {
+        height: 120%;
+        width: 50%;
+    }
+
+    @media (width <= $breakpoint-sm) {
+        padding: 50px 0;
+        height: 50vh;
+
+        .hero__media {
+            margin-top: 0;
+            height: auto;
+        }
+    }
+
+    .content__projet {
+        align-items: center;
+        width: 100%;
     }
 }

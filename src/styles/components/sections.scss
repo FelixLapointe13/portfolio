@@ -138,6 +138,10 @@
             align-items: center;
             gap: 10px;
         }
+
+        p:nth-child(odd) {
+            width: auto;
+        }
     }
 }
 
