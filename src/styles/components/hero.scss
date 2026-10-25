@@ -132,5 +132,26 @@
     .content__projet {
         align-items: center;
         width: 100%;
+
+        a {
+            background: linear-gradient(
+                to right,
+                var(--color-white) 50%,
+                var(--color-black) 50%
+            );
+
+            background-size: 200% 100%;
+            background-position: -100% 0;
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+
+            transition: background-position 0.5s ease;
+
+            &:hover {
+                background-position: 0 0;
+            }
+        }
     }
 }
