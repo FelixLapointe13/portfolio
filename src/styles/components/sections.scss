@@ -125,11 +125,10 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 30px;
-            row-gap: 60px;
+            row-gap: 30px;
 
             @media (width <= $breakpoint-md) {
                 grid-template-columns: 1fr;
-                row-gap: 30px;
             }
         }
 
